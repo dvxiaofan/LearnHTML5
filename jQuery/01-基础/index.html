@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+    <div id="main">
+        <div class="word">
+            <p>文字文字文字</p>
+            <p>文字文字文字</p>
+            <p>文字文字文字</p>
+            <p>文字文字文字</p>
+            <p>文字文字文字</p>
+        </div>
+        <div class="pic">
+            <img src="image/img_01.jpg">
+            <img src="image/img_02.jpg">
+            <img src="image/img_03.jpg">
+            <img src="image/img_04.jpg">
+            <img src="image/img_05.jpg">
+        </div>
+    </div>
+    <button>显示</button>
+    <button>隐藏</button>
+    <button>切换</button>
+    <!--引入 jQuery-->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+//        $('main' .word)
+//        console.log($('p'));
+//    console.log($('.word').attr('class'));
+        $('img').attr('src', 'image/img_03.jpg');
+        $('img').attr('width', '200px');
+//      查看标签内容
+//        console.log($('p').text());
+        $('p').text('hello');
+//        事件
+        $('button').eq(0).on('click', function () {
+            $('p').show();
+            $('img').show();
+        });
+        $('button').eq(1).on('click', function () {
+            $('p').hide();
+            $('img').hide();
+        });
+        $('button').eq(2).on('click', function () {
+            $('p').toggle(2000);
+            $('img').toggle(2000);
+        });
+//        遍历
+        var datas = [12, 22, 23, 455, 53];
+        $.each(datas, function (index, value) {
+//            console.log(index, value);
+        })
+//        取出对应下标
+//        console.log($.inArray(455, datas));
+//        写 css
+        $('.word').css({
+            background: 'red',
+            border:'1px solid green'
+        });
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+

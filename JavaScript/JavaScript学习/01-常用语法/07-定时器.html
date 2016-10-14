@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的天呢</title>
+    <style>
+        body{
+            background-color: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+        div{
+            color: red;
+            font-size: 150px;
+        }
+        img{
+            display: none;
+            width: 700px;
+            height: 100%;
+        }
+        p{
+            display: none;
+            color: red;
+            font-size: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <img id="icon" src="img/DSC_0020.JPG">
+    <p id="word">快看, 出来一个大美女!</p>
+    <div id="number">10</div>
+    <div></div>
+    <div class="show">接下来, 是见证奇迹的时刻...</div>
+
+    <script>
+        var img = document.getElementById('icon');
+        var word = document.getElementById('word');
+        var num = document.getElementById('number');
+
+        var timer = setInterval(function () {
+            num.innerText -= 1;
+            if (num.innerText == 0) {
+                clearInterval(timer);
+                word.style.display = 'block';
+                img.style.display = 'inline-block';
+                num.style.display = 'none';
+            }
+        }, 1000);
+    </script>
+
+
+</body>
+</html>

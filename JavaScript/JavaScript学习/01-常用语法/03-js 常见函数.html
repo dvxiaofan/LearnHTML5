@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>常见函数</title>
+    <script>
+        function sum(num1, num2) {
+            return num1 + num2;
+        }
+        // 调用
+        result = sum(20, 30)
+//        console.log(result)
+
+        function sum2(nums) {
+            var result = 0;
+
+            for (var i in nums) {
+                result += nums[i];
+            }
+            return result;
+        }
+        var resu = sum2([12,21,2,2,2,2]);
+//        console.log(resu);
+//        匿名函数
+        var ress = function () {
+            console.log('niminghanshu');
+        }
+
+        ress();
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

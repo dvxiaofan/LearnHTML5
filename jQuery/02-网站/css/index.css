@@ -1,0 +1,49 @@
+
+body{
+    padding-top: 50px;
+}
+
+#main{
+    padding: 30px;
+    text-align: center;
+}
+#main .container-fluid .row .col-md-4{
+    margin-bottom: 20px;
+}
+#main .container-fluid .row .col-md-4 img{
+    width:140px;
+}
+#main .container-fluid .row .col-md-4 p{
+    height: 75px;
+    text-indent: 28px;
+}
+
+#tab{
+    margin-top: 15px;
+}
+#tab .tab-content .row h1 {
+    color: orange;
+}
+#tab .tab-content .row h1 span{
+    color: darkgray;
+    font-size: 20px;
+}
+#tab .tab-content p{
+    text-align: left;
+    text-indent: 28px;
+}
+#tab .tab-content .row .col-md-7{
+    margin-top: 110px;
+}
+
+@media screen and (max-width: 979px){
+    #tab .tab-content .row .col-md-7{
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+

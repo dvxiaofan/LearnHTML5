@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document 常用操作</title>
+</head>
+<body>
+    <img class="icon" src="img/d_1.png">
+    <p id="word">这是什么</p>
+    <p></p>
+    <button>隐藏</button>
+
+
+
+
+    <script>
+        var icon = document.getElementsByClassName('icon')[0];
+        var p = document.getElementById('word');
+        var btn = document.getElementsByTagName('button')[0];
+
+        //        监听按钮点击
+        btn.onclick = function () {
+//            隐藏
+            if (btn.innerText == '隐藏') {
+                p.style.display = 'none';
+                icon.style.display = 'none';
+                btn.innerText = '显示';
+            } else {
+                p.style.display = 'block';
+                icon.style.display = 'inline-block';
+                btn.innerText = '隐藏';
+            }
+        }
+    </script>
+</body>
+</html>
