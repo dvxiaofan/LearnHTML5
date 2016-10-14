@@ -1,0 +1,11 @@
+div {
+    color: aquamarine;
+    font-size: 44px;
+    background-color: blue;
+}
+
+p {
+    color: red;
+    font-size: 15px;
+    border: dashed 2px darkcyan;
+}

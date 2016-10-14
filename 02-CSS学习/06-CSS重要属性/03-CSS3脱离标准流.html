@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3脱离标准流</title>
+
+    <!--
+    任何一种类型的标签一旦脱离标准流,就会强制转成行内-块级标签
+    -->
+    <style>
+        #main{
+            background-color: red;
+            width: 500px;
+            height: 150px;
+        }
+        .test1{
+            background-color: yellow;
+            width: 100px;
+            height: 50px;
+
+            /*浮动-->?*/
+            float: left;
+        }
+        .test2{
+            background-color: blue;
+            width: 100px;
+            height: 30px;
+
+            float: right;
+        }
+        .test3{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main">
+        <div class="test1">脱离标准流1</div>
+        <div class="test2">脱离标准流2</div>
+        <div class="test3">脱离标准流3</div>
+    </div>
+</body>
+</html>

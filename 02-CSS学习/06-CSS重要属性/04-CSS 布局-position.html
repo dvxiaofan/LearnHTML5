@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #main{
+            background-color: orange;
+            width: 400px;
+            height: 200px;
+            margin: 60px;
+
+            position: relative;
+        }
+        .test1{
+            background-color: blue;
+
+            position: absolute;
+
+            /*定位*/
+            right: 0;
+            bottom: 10px;
+        }
+        .test2{
+            background-color: red;
+
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="test1">helloxiaoming</div>
+    </div>
+
+    <div class="test2">相对浏览器定位</div>
+</body>
+</html>

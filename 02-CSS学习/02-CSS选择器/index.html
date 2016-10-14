@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 常见选择器</title>
+    <style>
+        /* 标签选择器 */
+        div {
+            color: blue;
+        }
+        p {
+            color: orange;
+        }
+
+        /* 类选择器 */
+        .testx {
+            color: green;
+        }
+
+        /* id 选择器 */
+        #main {
+            color: red;
+            font-size: large;
+        }
+
+        /* 并列选择器 */
+        #main, .testx {
+            border: solid 2px rosybrown;
+        }
+
+        /* 复合选择器 */
+        p.testx {
+            background-color: darkslategray;
+        }
+
+        /* 后代选择器 */
+        div a {
+            color: red;
+        }
+
+        /* 直接后代选择器 */
+        div.testx> a {
+            color: green;
+        }
+
+        div + p {
+            color: yellow;
+        }
+
+        /*伪类*/
+        input:focus {
+            /*去掉外线条*/
+            outline: none;
+            width: 500px;
+            height: 50px;
+            font-size: 33px;
+        }
+
+        /*当鼠标移动到上方时*/
+        #main:hover {
+            width: 400px;
+            height:200px;
+            background-color: black;
+        }
+        /* 伪元素*/
+        div:first-letter {
+            color: darkorchid;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main">div 标签</div>
+    <div>div 标签</div>
+    <div class="testx">
+        div标签
+        <a href="douniwan">douniwan</a>
+        <div>
+            <a href="lll">eeeeee</a>
+        </div>
+    </div>
+    <div>div 标签</div>
+
+    <p>段落</p>
+    <p>段落</p>
+    <p>段落</p>
+    <p class="testx">段落</p>
+    <div class="testx">div 标签</div>
+    <br>
+    <br>
+    <br>
+    <input placeholder="heljlejl">
+</body>
+</html>

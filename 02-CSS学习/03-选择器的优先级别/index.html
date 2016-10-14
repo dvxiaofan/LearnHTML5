@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器的优先级别</title>
+    <!--
+    CSS 样式遵循规律
+    1. 相同类型的选择器: a. 就近原则  b. 叠加原则
+    2. 不同类型选择器:
+      !important > 内联 > id 选择器 > 类型选择器 | 属性 | 伪元素 > 标签选择器 > 通配符 > 继承
+
+    -->
+    <style>
+
+        /*标签选择器*/
+        div {
+            color: red;
+        }
+        /*类选择器*/
+        .test1 {
+            color: blue;
+        }
+        .test2 {
+            color: yellow  !important;
+        }
+
+        /*id*/
+        #main {
+            color: #d798ff;
+        }
+
+        #second {
+            color: #00CCFF;
+        }
+
+        /*复合*/
+        div.test1 {
+            color: indigo;
+        }
+
+        div#main {
+            color: green;
+        }
+
+        /*通配符:
+        1. 优先级别非常低
+        2. 性能比较差
+        */
+        *{
+            font-size: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div id="main" class="test1 test2">测试选择器优先级别</div>
+
+    <p>段落你也能改</p>
+
+</body>
+</html>

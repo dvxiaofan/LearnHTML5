@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签类型</title>
+    <style>
+        div {
+            background-color: orange;
+            width: 300px;
+            height: 50px;
+
+            /*隐藏*/
+            /*display: none;*/
+
+            /*改变标签类型: 块级-->行内*/
+            /*display: inline;*/
+
+            /*改变标签类型: 块级-->行内-块级*/
+            display: inline-block;
+        }
+
+        p {
+            background-color: greenyellow;
+            width: 100px;
+            height: 60px;
+        }
+
+        span {
+            background-color: #00CCFF;
+            width: 300px;
+            height: 50px;
+
+            /*改变标签类型: 行内-->块级*/
+            /*display: block;*/
+
+            /*改变标签类型: 行内-->行内-块级*/
+            display: inline-block;
+        }
+        button {
+            width: 50px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<!--块级标签-->
+    <div>div标签</div>
+    <div>div标签</div>
+    <div>div标签</div>
+    <p>段落标签</p>
+<!--行内标签-->
+    <span>行内标签a</span>
+    <span>行内标签b</span>
+    <span>行内标签c</span>
+    <a href="lkjl">超链接a</a>
+    <a href="lkjl">超链接b</a>
+
+    <!--行内-块级标签-->
+    <input placeholder="hello">
+    <button>按钮</button>
+    <button>按钮</button>
+    <button>按钮</button>
+    <hr>
+
+</body>
+</html>
