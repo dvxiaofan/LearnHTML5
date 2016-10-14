@@ -1,0 +1,126 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    /*去除下划线*/
+    text-decoration: none;
+    font-size: 13px;
+    color: darkgray;
+}
+
+body{
+    background: url("../imgs/bg.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/*面板*/
+#panel{
+    background-color: white;
+    display: inline-block;
+
+    text-align: left;
+
+    margin-top: 100px;
+
+    padding: 30px;
+
+    border-radius: 5px;
+
+    box-shadow: -10px 10px 20px;
+}
+
+#panel-header{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#panel-header h2{
+    font-size: 19px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dddddd;
+}
+
+/*中间内容*/
+#panel-content{
+
+}
+.user-pwd{
+    margin-bottom: 15px;
+    height: 38px;
+
+    position: relative;
+}
+.user-pwd img{
+    position: absolute;
+    left: 5px;
+    top: 6px;
+}
+.user-pwd input{
+    width: 100%;
+    box-sizing: border-box;
+    height:100%;
+    padding-left: 38px;
+    border-radius: 5px;
+    /*重写*/
+    border: 1px solid #dddddd;
+}
+.user-pwd input:focus{
+    outline: none;
+    /*改变边框的颜色*/
+    border-color: orange;
+    box-shadow: 0 0 15px orange;
+}
+
+#setting{
+    margin-bottom: 15px;
+}
+#setting .forget-pwd{
+    float: right;
+}
+
+#btn{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+#btn:focus{
+    outline:none;
+}
+
+#register{
+    text-align: center;
+    margin: 12px 0;
+    font-size: 13px;
+}
+#register a{
+    color: orange;
+}
+
+/*尾部*/
+#panel-footer{
+    /*background-color: gray;*/
+    font-size: 15px;
+
+}
+#panel-footer img{
+    width: 30px;
+    height: 30px;
+
+    /*图片垂直居中*/
+    vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+

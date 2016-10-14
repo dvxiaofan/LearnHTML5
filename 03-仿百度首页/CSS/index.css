@@ -1,0 +1,129 @@
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+a{
+    color: black;
+}
+
+/*头部*/
+#header{
+    background-color: rgba(0, 0, 0, 0.1);
+
+    /*右对齐*/
+    text-align: right;
+    /*上下间距*/
+    /*margin: 10px 0;*/
+
+    /*行高*/
+    line-height: 37px;
+
+}
+
+#header a{
+    font-weight: bolder;
+    /*font-family: sans-serif;*/
+
+    font-size: 14px;
+    /*右间距*/
+    margin-right: 20px;
+}
+#header a.no-weight{
+    font-weight: normal;
+}
+#header a.more-product{
+    background-color: #3388ff;
+    color: white;
+    /*去掉下划线*/
+    text-decoration: none;
+    /*设置内边距*/
+    padding: 12px;
+}
+
+/*中间内容*/
+#content{
+
+}
+#content .top-content{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 43px;
+}
+#content .top-content img{
+    width: 270px;
+    height: 129px;
+}
+#content .bottom-content{
+    background-color: green;
+    width: 640px;
+    height: 38px;
+    /*居中*/
+    margin: 0 auto 30px;
+}
+#content .bottom-content input{
+    width: 536px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+}
+#content .bottom-content a{
+    background-color: #3388ff;
+    color: white;
+    text-decoration: none;
+    width: 104px;
+    height: 100%;
+    /*改变标签类型*/
+    display: inline-block;
+    /*浮动*/
+    float: right;
+    text-align: center;
+    line-height: 38px;
+}
+#content .bottom-content a:hover{
+    opacity: 0.9;
+}
+#content .bottom-content input:focus{
+    /*取出外边线*/
+    outline: none;
+    border: 1px solid #3388ff;
+}
+
+/*快速搜索*/
+.quick-search{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.quick-search img{
+    width: 151px;
+    height: 141px;
+    /*设置 y编辑*/
+    margin: 0 5px;
+}
+.quick-search img:hover{
+    /*设置不透明*/
+    opacity: 0.5;
+}
+
+/*尾部*/
+#footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    padding: 12px 0;
+
+    /*内容居中*/
+    text-align: center;
+    font-size: 12px;
+    color: darkgray;
+}
+#footer .top-footer{
+    margin-bottom: 5px;
+}
+#footer a{
+    margin: 0 5px;
+    color: darkgray;
+}
